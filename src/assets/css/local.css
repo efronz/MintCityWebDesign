@@ -581,6 +581,20 @@
   body.dark-mode #pricing-357 .cs-small {
     color: var(--bodyTextColorWhite);
   }
+  body.dark-mode #pricing-357 .cs-h3:before,
+  body.dark-mode #pricing-357 .cs-item-text:before,
+  body.dark-mode #pricing-357 .cs-price:before,
+  body.dark-mode #pricing-357 .cs-included:before,
+  body.dark-mode #pricing-357 .cs-li:before,
+  body.dark-mode #pricing-357 .cs-small:before,
+  body.dark-mode #pricing-357 .cs-h3:after,
+  body.dark-mode #pricing-357 .cs-item-text:after,
+  body.dark-mode #pricing-357 .cs-price:after,
+  body.dark-mode #pricing-357 .cs-included:after,
+  body.dark-mode #pricing-357 .cs-li:after,
+  body.dark-mode #pricing-357 .cs-small:after {
+    background-color: var(--bodyTextColorWhite);
+  }
   body.dark-mode #pricing-357 .cs-li-img {
     /* make so bright it turns white */
     filter: brightness(900%) grayscale(1);

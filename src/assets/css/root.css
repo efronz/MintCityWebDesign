@@ -32,33 +32,29 @@
     box-sizing: border-box;
   }
   .cs-topper {
-    display: block;
-    margin-bottom: 0.25rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
     font-size: var(--topperFontSize);
     line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: 0.1em;
     font-weight: 700;
     color: var(--primary);
-    text-align: inherit;
+    margin-bottom: 0.25rem;
+    display: block;
   }
   .cs-title {
-    position: relative;
-    margin: 0 0 1rem 0;
-    max-width: 43.75rem;
     font-size: var(--headerFontSize);
-    line-height: 1.2em;
     font-weight: 900;
-    color: var(--headerColor);
+    line-height: 1.2em;
     text-align: inherit;
+    max-width: 43.75rem;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+    position: relative;
   }
   .cs-text {
-    margin: 0;
-    max-width: 40.625rem;
-    width: 100%;
     font-size: var(--bodyFontSize);
     line-height: 1.5em;
-    color: var(--bodyTextColor);
     text-align: inherit;
   }
 }
@@ -595,6 +591,9 @@
   body.dark-mode #cs-navigation .cs-line {
     background-color: #fff;
   }
+  body.dark-mode #cs-navigation .cs-drop-ul {
+    background-color: var(--dark);
+  }
   body.dark-mode #cs-navigation .cs-ul-wrapper {
     background-color: var(--medium);
   }
@@ -662,7 +661,7 @@
   #cs-navigation .cs-li-link.cs-drop-link {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 2vw, 1.25rem);
-    color: #fff;
+    color: var(--dark);
   }
 }
 /* Desktop - 1024px */
@@ -769,7 +768,8 @@
 /* Dark Mode - Desktop */
 @media only screen and (min-width: 64rem) {
   body.dark-mode #cs-navigation .cs-drop-ul {
-    background-color: var(--dark);
+    background-color: var(--secondary);
+    border-bottom: 5px solid var(--accent);
   }
   body.dark-mode #cs-navigation .cs-li-link.cs-drop-link:hover {
     color: var(--bodyTextColorWhite);
@@ -1027,12 +1027,25 @@
     padding-top: 3.125rem;
   }
   #int-hero picture {
-    z-index: -2;
+    z-index: -1;
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
+  }
+  #int-hero picture:before {
+    /* black color overlay */
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: var(--primary);
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    z-index: 1;
   }
   #int-hero picture img {
     position: absolute;
@@ -1095,122 +1108,143 @@
     padding-block-end: 6.25rem;
   }
 }
-/*-- -------------------------- -->
-<---    Final Call To Action    -->
-<--- -------------------------- -*/
-/* Mobile */
+/* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  #cta {
-    position: relative;
-    padding: 3.125rem 0;
+  body.dark-mode #int-hero picture:before {
+    background: var(--dark);
   }
-  #cta .container {
-    text-align: center;
+}
+/*-- -------------------------- -->
+<---       Contact Strip        -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #contact-strip-325 {
+    padding: var(--sectionPadding);
+    background-color: #FFF6F6;
   }
-  #cta picture {
-    z-index: -2;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
+  #contact-strip-325 .cs-stat-group {
     width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 37.5rem;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
   }
-  #cta picture img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+  #contact-strip-325 .cs-item {
+    list-style: none;
+    width: 18.125rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
-  #cta .title {
-    position: relative;
-    margin-bottom: 2.25rem;
-    font-size: min(9vw, 3rem);
-    line-height: 1.20833333em;
+  #contact-strip-325 .cs-picture {
+    width: 5rem;
+    height: 5rem;
+    /* 12px - 20px */
+    margin-right: clamp(0.75rem, 3vw, 1.25rem);
+    border: 1px solid var(--primary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.6s;
+    /* prevents flexbox from squishing it */
+    flex: none;
+  }
+  #contact-strip-325 .cs-flex-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  #contact-strip-325 .cs-icon {
+    width: 2.0625rem;
+    height: auto;
+    filter: invert(38%) sepia(86%) saturate(367%) hue-rotate(290deg) brightness(85%) contrast(94%);
+  }
+  #contact-strip-325 .cs-header {
+    font-size: 1.25rem;
     font-weight: 900;
-    color: #fff;
-    text-align: center;
-  }
-  #cta p {
-    opacity: 1;
-    margin: auto;
-    margin-bottom: 2.25rem;
-    max-width: 37.375rem;
-    width: 96%;
-    color: #fff;
-    text-align: center;
-  }
-  #cta:before {
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    opacity: 0.7;
+    line-height: 1.2em;
+    margin: 0;
+    margin-bottom: 0.75rem;
+    color: var(--headerColor);
     display: block;
-    background: #000;
-    height: 100%;
-    width: 100%;
+  }
+  #contact-strip-325 .cs-contact-link {
+    color: #828282;
+    text-decoration: none;
+  }
+  #contact-strip-325 .cs-contact-link:hover {
+    color: var(--primary);
+  }
+  #contact-strip-325 .cs-address {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-decoration: none;
+    color: #828282;
+    display: block;
+  }
+  #contact-strip-325 .cs-link {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-decoration: none;
+    color: #828282;
+    display: block;
+    transition: color 0.3s;
+  }
+  #contact-strip-325 .cs-link:hover {
+    color: var(--primary);
   }
 }
-/* Small Desktop */
+/* Tablet - 650px */
+@media only screen and (min-width: 40.625rem) {
+  #contact-strip-325 .cs-stat-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 1.25rem;
+    row-gap: 2rem;
+  }
+}
+/* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #cta {
-    padding: 10.5rem 0;
-  }
-}
-/* Large Desktop */
-@media only screen and (min-width: 1300px) {
-  #cta {
-    position: relative;
-    margin-top: 6.25rem;
-  }
-  #cta .container {
-    margin: auto;
-    width: 90.0625%;
-  }
-  #cta picture {
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90.0625%;
-  }
-  #cta picture:before {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    opacity: 0.7;
-    display: block;
-    background: #000;
-    height: 100%;
-    width: 100%;
-  }
-  #cta:before {
-    display: none;
-  }
-  #cta:after {
-    z-index: -3;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    content: "";
-    opacity: 1;
-    transform: translateX(-50%);
-    display: block;
-    background: url("/assets/svgs/cta-squares.svg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 69.25rem;
-    width: 125rem;
+  #contact-strip-325 .cs-stat-group {
+    max-width: 80rem;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
   }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #cta:after {
-    display: none;
+  body.dark-mode #contact-strip-325 {
+    background-color: #273910;
+  }
+  body.dark-mode #contact-strip-325 .cs-picture {
+    border: 1px solid var(--secondaryLight);
+  }
+  body.dark-mode #contact-strip-325 .cs-header {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #contact-strip-325 .cs-link,
+  body.dark-mode #contact-strip-325 .cs-contact-link,
+  body.dark-mode #contact-strip-325 .cs-address {
+    color: var(--primaryLight);
+  }
+  body.dark-mode #contact-strip-325 .cs-icon {
+    filter: invert(53%) sepia(100%) saturate(321%) hue-rotate(340deg) brightness(89%) contrast(83%);
+  }
+  body.dark-mode #contact-strip-325 .cs-link:hover {
+    color: var(--secondaryLight);
+  }
+  body.dark-mode #contact-strip-325 .cs-contact-link:hover {
+    color: var(--secondaryLight);
   }
 }
 /*-- -------------------------- -->
