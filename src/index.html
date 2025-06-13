@@ -1,5 +1,5 @@
 ---
-title: 'Pixel Perfect Websites | Code Stitch Web Designs | Denver, CO'
+title: 'Mint City Web Design | Charlotte, NC'
 description: 'Meta description for the page'
 preloadImg: '/assets/images/landing.jpg'
 permalink: '/'
@@ -57,312 +57,487 @@ eleventyNavigation:
 {% block body %}
 
     <!-- ============================================ -->
-    <!--                    Hero                      -->
+    <!--                   Hero                       -->
     <!-- ============================================ -->
 
-    <section id="hero">
+    <section id="hero-408">
         <div class="cs-container">
-            <div class="cs-flex-group">
-                <span class="cs-topper">mountain hiking society</span>
-                <h1 class="cs-title">Explore the World with Exciting People</h1>
+            <div class="cs-content">
+            <h2 class="cs-title"><span class="cs-color">Professional Websites</span> For Small Businesses</h2>
                 <p class="cs-text">
-                    Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius. Nibh tortor id aliquet lectus proin nibh condimentum.
+                    Mint City Web Design specializes in hand-coded websites customized for small businesses. Whether you're just starting out or ready to level up your online presence, we want to help your small business grow.
                 </p>
-                <a href="/about" class="cs-button-solid">Explore More</a>
-                <a href="/contact" class="cs-button-transparent">
-                    <img
-                    class="cs-img"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
-                    alt="play icon"
-                    width="17"
-                    height="17"/>
-                    Get in Touch
-                </a>
+                <a href="/contact/" class="cs-button-solid">Contact Us</a>
+                <a href="/services/" class="cs-button-transparent">Our Services</a>
+            </div>
+            <div class="cs-stat-group">
+                <picture class="cs-background">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Hero/leaves.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Hero/leaves.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/leaves.jpg" alt="leaves" width="842" height="737" aria-hidden="true">
+                </picture>
             </div>
         </div>
+    </section>
 
-        <!-- Background Image -->
-        <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="/assets/images/landing-m.webp">
-            <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/landing.jpg" alt="new home" width="2500" height="1667" loading="eager">
-        </picture>
+    <!-- ============================================ -->
+    <!--                Meet The Team                 -->
+    <!-- ============================================ -->
+
+    <section id="meet-team-1141">
+        <div class="cs-container">
+            <div class="cs-content">
+                <div class="cs-flex">
+                    <span class="cs-topper">Our Expert Web Team</span>
+                    <h2 class="cs-title">Meet The Web Team</h2>
+                </div>
+                <p class="cs-text">
+                    We're a husband-and-wife team who turned our love for code and design into a small business that helps other small businesses grow. With backgrounds in computer science and digital art, we created Mint City Web Design to offer handcrafted websites that are fast, functional, and tailored to each client.
+                </p>
+                <a href="/about/about-us/" class="cs-button-solid">About Us</a>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson1.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson1.jpg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson1.jpg" alt="person" width="305" height="407">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-name">Natalie Fronzaglia</span>
+                        <span class="cs-job">Designer</span>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson2.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson2.jpg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson2.jpg" alt="person" width="305" height="407">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-name">Eric Fronzaglia</span>
+                        <span class="cs-job">Developer</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </section>
 
     <!-- ============================================ -->
     <!--                  Services                    -->
     <!-- ============================================ -->
 
-    <section id="services" class="services">
-        <!-- Get Icons From flaticon.com -->
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service1.svg"
-                alt="appliance"
-                width="48"
-                height="48"/>
-            </picture>
-            <h2>Service 1</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-        </div>
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service2.svg"
-                alt="appliance"
-                width="48"
-                height="48"/>
-            </picture>
-            <h2>Service 2</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-        </div>
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service3.svg"
-                alt="appliance"
-                width="48"
-                height="48"/>
-            </picture>
-            <h2>Service 3</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
-
-    <section id="sbs">
+    <section id="services-942">
         <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
-                </picture>
+            <!-- Left Content Section-->
+            <div class="cs-content">
+                <span class="cs-topper">Our Service</span>
+                <h2 class="cs-title">What We Provide Your Business</h2>
+                <p class="cs-text">
+                    We want to save you time and unnecessary stress. At Mint City Web Design, we offer custom design, development, and ongoing management to build and maintain fast, reliable websites tailored to your business.
+                </p>
             </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/trees-white.svg" alt="hair cut" width="40" height="40">
+                    </picture>
+                    <h3 class="cs-h3">Website Design</h3>
+                    <p class="cs-item-text">
+                        We create custom website designs that reflect your brand's personality and connect with your audience. Every layout is thoughtfully planned to be both beautiful and easy to navigate on any device.
                     </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img 
-                    class="cs-quote-icon"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
-                    alt="gavel"
-                    width="136"
-                    height="77"/>
-                </div>
-                <a href="/about" class="cs-button-solid">More About Us</a>
-            </div>
+                    <a href="" class="cs-link">Read More</a>
+                    <!--Background Image-->
+                    <picture class="cs-background">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/hair1.jpg" alt="hair cut" width="480" height="425">
+                    </picture>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/trees-white.svg" alt="hair cut" width="40" height="40">
+                    </picture>
+                    <h3 class="cs-h3">Website Development</h3>
+                    <p class="cs-item-text">
+                        We hand-code custom, static sites featuring HTML and CSS. By skipping the page builders, we create clean, efficient code that loads faster, ranks better, and offers full flexibility for your brand.
+                    </p>
+                    <a href="" class="cs-link">Read More</a>
+                    <!--Background Image-->
+                    <picture class="cs-background">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/hair2.jpg" alt="hair cut" width="480" height="425">
+                    </picture>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/trees-white.svg" alt="hair cut" width="40" height="40">
+                    </picture>
+                    <h3 class="cs-h3">Website Management</h3>
+                    <p class="cs-item-text">
+                        We handle ongoing updates and edits so you don't have to. Just contact us when something needs to change. We're here to keep your site up to date and your time focused on running your business.
+                    </p>
+                    <a href="" class="cs-link">Read More</a>
+                    <!--Background Image-->
+                    <picture class="cs-background">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/hair3.jpg" alt="hair cut" width="480" height="425">
+                    </picture>
+                </li>
+            </ul>
         </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--            Extra Content To Rank             -->
-    <!-- ============================================ -->
-
-    <section id="sbs-r">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="560">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="560">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">SEO Ranking</span>
-                <h2 class="cs-title">Talk about a main service keyword</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non tenetur, iure nihil ipsam qui atque commodi id voluptatem nesciunt, quis animi fuga cum doloribus! Eaque laboriosam, unde consectetur iure asperiores ullam. Consequuntur debitis a voluptatibus vitae optio autem explicabo quia neque est quas, in placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus modi laudantium voluptatibus rem libero error minus quia eligendi sapiente eos.
-                </p>
-                <a href="/blog" class="cs-button-solid">Read our Blog</a>
-            </div>
-        </div>
+        <!--Waves Background-->
+        <picture class="cs-waves">
+            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/waves-m.svg">
+            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/waves.svg">
+            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/waves.svg" alt="waves graphic" width="1920" height="331" aria-hidden="true">
+        </picture>
     </section>
 
     <!-- ============================================ -->
     <!--                   Gallery                    -->
     <!-- ============================================ -->
 
-    <section id="gallery">
+    <section id="gallery-379">
         <div class="cs-container">
-            <span class="cs-topper">Our Portfolio</span>
-            <h2 class="cs-title">Et orci volutpat, back up generator installations</h2>
-            <div class="cs-image-group">
-                <!-- Row 1-->
-                <div class="cs-row cs-row-1">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port1-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port1.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port1.jpg" alt="new hallway" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port4-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port4.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port4.jpg" alt="new home construction" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port7-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port7.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port7.jpg" alt="building a new wall" loading="lazy" width="400" height="560">
-                    </picture>
-                </div>
-                <!-- Row 2 -->
-                <div class="cs-row cs-row-2">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port2-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port2.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port2.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port5-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port5.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port5.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port8-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port8.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port8.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
-                    </picture>
-                </div>
-                <!-- Row 3 -->
-                <div class="cs-row cs-row-3">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port3-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port3.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port3.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port6-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port6.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port6.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port9-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port9.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port9.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
-                    </picture>
-
-                </div>
+            <div class="cs-content">
+                <span class="cs-topper">Our Portfolio</span>
+                <h2 class="cs-title">Check Out Our Work</h2>
+                <p class="cs-text">
+                    As a new business, we're excited to share our recent projects - a custom website built for a North Carolina-based Real Estate Agency and our own page. We look forward to adding more success stories as we help small businesses grow online.
+                </p>
             </div>
-            <a href="/projects" class="cs-button-solid">View Full Gallery</a>
+            <div class="cs-gallery">
+                <!--Picture 1-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery1.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery1.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery1.jpg" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 2-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery2.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery2.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery2.jpg" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 3-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery3.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery3.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery3.jpg" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 4-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery4.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery4.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery4.jpg" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 5-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery5.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery5.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery5.jpg" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 6-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery6.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery6.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery6.jpg" alt="gallery" width="305" height="400">
+                </picture>
+            </div>
         </div>
     </section>
 
     <!-- ============================================ -->
-    <!--                   Reviews                    -->
+    <!--                  Pricing                     -->
     <!-- ============================================ -->
 
-    <section id="reviews">
+    <section id="pricing-357">
         <div class="cs-container">
-            <span class="cs-topper">Our Reviews</span>
-            <h2 class="cs-title">Words From Our Customers</h2>
-            <p class="cs-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dolor volutpat porttitor sagittis nunc nisl. Sagittis sit pellentesque gravida viverra. Leo ut sed euismod tortor risus et. Ornare non neque, leo, ornare. Lorem ipsum dolor sit amet.
-            </p>
+            <div class="cs-content">
+                <span class="cs-topper">Pricing</span>
+                <h2 class="cs-title">It's Easy to Get Started</h2>
+                <p class="cs-text">
+                    At Mint City Web Design, we want to help you start your webpage. We support businesses through periods of expansion, succession.
+                </p>
+            </div>
             <ul class="cs-card-group">
-                <!-- Review 1 -->
+                <!-- Option 1 -->
                 <li class="cs-item">
-                    <img
-                    class="cs-item-img"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png"
-                    alt="profile picture"
-                    width="80"
-                    height="80"/>
-                    <p class="cs-item-p">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
+                    <h3 class="cs-h3">Monthly</h3>
+                    <p class="cs-item-text">
+                        We design, develop, and manage.
                     </p>
-                    <span class="cs-reviewer">
-                        Jon Doe
-                        <span class="cs-desc">Homeowner</span>
-                    </span>
-                    <img
-                    class="cs-item-stars"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-                    alt="stars"
-                    width="96"
-                    height="16"/>
+                    <div class="cs-option-group">
+                        <span class="cs-price">$150<span class="cs-small">/month</span></span>
+                    </div>
+                    <span class="cs-included">Package Includes</span>
+                    <ul class="cs-ul">
+                        <li class="cs-li">
+                            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                            Design via Figma
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                            Development
+                        </li>
+                        <li class="cs-li cs-disabled">
+                            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                            Unlimited edits and support
+                        </li>
+                        <li class="cs-li cs-disabled">
+                            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                            Hosting
+                        </li>
+                        <li class="cs-li cs-disabled">
+                            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                            5 pages included
+                        </li>
+                        <li class="cs-li cs-disabled">
+                            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                            +$100 one-time per additional page
+                        </li>
+                        <li class="cs-li cs-disabled">
+                            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                            +$20 annually domain management
+                        </li>
+                    </ul>
+                    <a href="/contact/" class="cs-button-solid">Contact</a>
                 </li>
-                <!-- Review 2 -->
-                <li class="cs-item">
-                    <img
-                    class="cs-item-img"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png"
-                    alt="profile picture"
-                    width="80"
-                    height="80"/>
-                    <p class="cs-item-p">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
+                <!-- Option 2 -->
+                <li class="cs-item cs-popular">
+                    <h3 class="cs-h3">Homepage Design</h3>
+                    <p class="cs-item-text">
+                        Not ready to subscribe? See the design first.
                     </p>
-                    <span class="cs-reviewer">
-                        Jane Doe
-                        <span class="cs-desc">Homeowner</span>
-                    </span>
-                    <img
-                    class="cs-item-stars"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-                    alt="stars"
-                    width="96"
-                    height="16"/>
+                    <div class="cs-option-group">
+                        <span class="cs-price">$35<span class="cs-small">One Time</span></span>
+                    </div>
+                    <span class="cs-included">Package Includes</span>
+                    <ul class="cs-ul">
+                        <li class="cs-li">
+                            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                            Desktop homepage design via Figma
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                            Mobile homepage design via Figma
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                            2 rounds of revisions
+                        </li>
+                        <li class="cs-li cs-disabled">
+                            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                            +$35 basic copywriting
+                        </li>
+                    </ul>
+                    <a href="/contact/" class="cs-button-solid">Contact</a>
+                </li>
+                <!-- Option 3 -->
+                <li class="cs-item">
+                    <h3 class="cs-h3">5 Page Design</h3>
+                    <p class="cs-item-text">
+                        Want to see the full site before deciding?
+                    </p>
+                    <div class="cs-option-group">
+                        <span class="cs-price">$99<span class="cs-small">/month</span></span>
+                    </div>
+                    <span class="cs-included">Package Includes</span>
+                    <ul class="cs-ul">
+                        <li class="cs-li">
+                            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                            All available starter feature
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                            Home service 24/7
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                            Customer agent service
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                            Professional cleaner
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                            2 bed room cleaning
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                            2 bed, living room cleaning
+                        </li>
+                    </ul>
+                    <a href="/basic.html" class="cs-button-solid">Get Started</a>
                 </li>
             </ul>
-            <a aria-label="read more reviews" href="/reviews" class="cs-button-solid">Our Reviews</a>
+        </div>
+        <!--Top SVG zig zag-->
+        <svg class="cs-top" width="1920" height="39" viewBox="0 0 1920 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1920 -0.388672H0V15.4329L4.95532 13.0079L18.1455 14.8914L28.6394 22.2058L42.0481 24.0343L54.0723 26.6713L66.8979 20.9736L78.7034 23.226L90.9463 27.4247L102.533 21.1855L114.776 24.1442L126.654 24.8427L138.605 24.411L148.881 28.7667L160.759 28.233L171.18 32.9654L183.569 26.7811L194.573 29.575L207.69 29.63L219.277 25.3293L228.531 18.5486L240.556 15.6448L253.017 13.0079L265.989 12.6861L279.033 14.138L292.296 15.8096L305.413 12.1446L317.437 16.6651L331.065 14.6795L342.943 18.7683L354.749 22.6374L366.773 25.7609L378.943 28.8766L391.331 31.3016L405.469 27.6915L417.274 31.6783L428.57 34.739L440.375 34.9038L451.598 38.0744L463.622 37.321L475.208 38.5061L487.087 35.3355L498.455 36.4107L510.115 37.7527L522.285 33.8287L536.058 31.6234L547.864 25.9179L561.928 28.8766L574.171 20.3772L587.434 21.6172L599.604 23.6576L611.191 21.1306L623.215 24.2541L634.947 24.8976L646.607 23.5556L658.413 20.1103L670.437 17.3164L681.805 24.0343L694.048 20.3772L706.072 19.7336L728.226 29.0414L741.197 24.2541H753.221L761.31 35.2805L773.771 33.7737L785.65 29.4181L796.29 30.87L809.261 34.2054L818.37 26.3495L828.864 21.7741L842.418 22.5825L852.329 16.6651L866.248 18.9253L875.722 11.399L887.673 9.56261L900.28 10.8575L911.94 7.89883L924.474 9.93931L937.373 7.78896L949.98 6.76871L961.931 9.92362L966.887 7.50643L980.077 14.7658L990.57 22.0802L1003.98 23.9088L1016 26.5457L1028.83 20.848L1040.63 23.1004L1052.88 27.2991L1064.46 21.0599L1076.71 24.0186L1088.59 24.7171L1100.54 24.2855L1110.81 28.6411L1122.69 28.1075L1133.11 32.8398L1145.5 26.6556L1156.5 29.4495L1169.62 29.5044L1181.21 25.2037L1190.46 18.423L1202.49 15.5192L1214.95 12.8823L1227.92 12.5605L1240.96 14.0124L1254.23 15.6841L1267.34 12.019L1279.37 16.5395L1293 14.5539L1304.87 18.6349L1316.68 22.5118L1328.7 25.6353L1340.87 28.751L1353.26 31.176L1367.4 27.5659L1379.21 31.5527L1390.5 34.6135L1402.31 34.7783L1413.53 37.9489L1425.55 37.1955L1437.14 38.3805L1449.02 35.2099L1460.39 36.2851L1472.05 37.6271L1484.22 33.7031L1497.99 31.4978L1509.79 25.7923L1523.86 28.751L1536.1 20.2516L1549.37 21.4916L1561.54 23.5321L1573.12 21.005L1585.15 24.1285L1596.88 24.7721L1608.54 23.43L1620.34 19.9848L1632.37 17.183L1643.74 23.9088L1655.98 20.2516L1668 19.6081L1690.16 28.9158L1703.13 24.1285H1715.15L1723.24 35.155L1735.7 33.6482L1747.58 29.2925L1758.22 30.7444L1771.19 34.0798L1780.3 26.2239L1790.79 21.6485L1804.35 22.4569L1814.26 16.5395L1828.18 18.7997L1837.65 11.2656L1849.6 9.43704L1862.21 10.732L1873.87 7.77326L1886.41 9.81374L1899.3 7.66339L1911.91 6.64315L1920 7.39656V-0.388672Z" fill="white"/>
+        </svg>
+        <!--Bottom SVG zig zag-->
+        <svg class="cs-bottom" width="1900" height="39" viewBox="0 0 1900 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1900 38.8948H-20V23.0732L-15.0447 25.4982L-1.85449 23.6147L8.6394 16.3004L22.0481 14.4718L34.0723 11.8348L46.8979 17.5325L58.7034 15.2801L70.9463 11.0814L82.5332 17.3206L94.7759 14.3619L106.654 13.6634L118.605 14.0951L128.881 9.73941L140.759 10.2731L151.18 5.54073L163.569 11.725L174.573 8.93107L187.69 8.87613L199.277 13.1768L208.531 19.9575L220.556 22.8613L233.017 25.4982L245.989 25.82L259.033 24.3681L272.296 22.6965L285.413 26.3615L297.437 21.841L311.065 23.8266L322.943 19.7378L334.749 15.8687L346.773 12.7452L358.943 9.62954L371.331 7.20451L385.469 10.8146L397.274 6.8278L408.57 3.76708L420.375 3.60227L431.598 0.431671L443.622 1.18508L455.208 3.05176e-05L467.087 3.17063L478.455 2.09545L490.115 0.753441L502.285 4.67744L516.058 6.88274L527.864 12.5882L541.928 9.62954L554.171 18.1289L567.434 16.889L579.604 14.8485L591.191 17.3755L603.215 14.252L614.947 13.6085L626.607 14.9505L638.413 18.3958L650.437 21.1897L661.805 14.4718L674.048 18.1289L686.072 18.7725L708.226 9.46473L721.197 14.252H733.221L741.31 3.22556L753.771 4.73238L765.65 9.08803L776.29 7.63615L789.261 4.30074L798.37 12.1566L808.864 16.732L822.418 15.9236L832.329 21.841L846.248 19.5808L855.722 27.1071L867.673 28.9435L880.28 27.6486L891.94 30.6073L904.474 28.5668L917.373 30.7171L929.98 31.7374L941.931 28.5825L946.887 30.9997L960.077 23.7403L970.57 16.4259L983.979 14.5973L996.003 11.9604L1008.83 17.6581L1020.63 15.4057L1032.88 11.207L1044.46 17.4462L1056.71 14.4875L1068.59 13.789L1080.54 14.2206L1090.81 9.86498L1102.69 10.3986L1113.11 5.66629L1125.5 11.8505L1136.5 9.05664L1149.62 9.0017L1161.21 13.3024L1170.46 20.0831L1182.49 22.9869L1194.95 25.6238L1207.92 25.9456L1220.96 24.4937L1234.23 22.822L1247.34 26.4871L1259.37 21.9666L1273 23.9522L1284.87 19.8712L1296.68 15.9943L1308.7 12.8708L1320.87 9.75511L1333.26 7.33007L1347.4 10.9402L1359.21 6.95337L1370.5 3.89264L1382.31 3.72784L1393.53 0.55724L1405.55 1.31065L1417.14 0.125599L1429.02 3.2962L1440.39 2.22102L1452.05 0.879009L1464.22 4.80301L1477.99 7.0083L1489.79 12.7138L1503.86 9.75511L1516.1 18.2545L1529.37 17.0145L1541.54 14.974L1553.12 17.5011L1565.15 14.3776L1576.88 13.7341L1588.54 15.0761L1600.34 18.5213L1612.37 21.3231L1623.74 14.5973L1635.98 18.2545L1648 18.898L1670.16 9.5903L1683.13 14.3776H1695.15L1703.24 3.35113L1715.7 4.85795L1727.58 9.2136L1738.22 7.76171L1751.19 4.42631L1760.3 12.2822L1770.79 16.8576L1784.35 16.0492L1794.26 21.9666L1808.18 19.7064L1817.65 27.2405L1829.6 29.0691L1842.21 27.7741L1853.87 30.7328L1866.41 28.6924L1879.3 30.8427L1891.91 31.863L1900 31.1095V38.8948Z" fill="white"/>
+        </svg>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Steps                      -->
+    <!-- ============================================ -->
+
+    <section id="steps-1712">
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)"
+            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting-women.jpeg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)"
+            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting-women.jpeg">
+            <img loading="lazy" decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting-women.jpeg"
+            alt="busines meeting" width="522" height="609" aria-hidden="true">
+        </picture>
+        <div class="cs-container">
+            <div class="cs-wrapper">
+                <div class="cs-content">
+                    <span class="cs-topper">Our Steps</span>
+                    <h2 class="cs-title">How To Get Started</h2>
+                </div>
+                <ul class="cs-card-group">
+                    <li class="cs-item">
+                        <span class="cs-number">01</span>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Connect With Us / Schedule a Meeting</h3>
+                            <p class="cs-item-text">
+                                We provide some of the finest quality, most responsive and reliable, and cost effective services and solutions.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <span class="cs-number">02</span>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Paperwork Stuff</h3>
+                            <p class="cs-item-text">
+                                The paperwork stuff if moving forward.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <span class="cs-number">03</span>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Review the Design</h3>
+                            <p class="cs-item-text">
+                                We provide some of the finest quality, most responsive and reliable, and cost effective services and solutions.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <span class="cs-number">04</span>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Enjoy!</h3>
+                            <p class="cs-item-text">
+                                Focus on your business. Just let us know when you have edits (tickets, email, text, call) and we'll create a ticket.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+    <section id="reviews-508">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Testimonials</span>
+                <h2 class="cs-title">Words from <span class="cs-color">Our Clients</span></h2>
+                <p class="cs-text">
+                    We're proud to work with small business owners who value quality and personal service. Take a look at what our clients have to say about their experience working with us.
+                </p>
+                <!--<a href="" class="cs-button-solid">Reviews</a>-->
+            </div>
+            <div class="cs-review">
+                <p class="cs-review-p">
+                    Consequat nisl vel pretium lectus quam id leo. Mauris augue neque gravida in fermentum et sollicitudin ac orci. Blandit libero volutpat sed cras ornare
+                </p>
+                <img class="cs-profile" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/profile1.png" alt="profile" width="60" height="60">
+                <div class="cs-info">
+                    <span class="cs-name">Steven McGee</span>
+                    <span class="cs-location">Pink Magnolia Realty</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- ============================================ -->
+<!--                Contact Form                  -->
+<!-- ============================================ -->
+
+    <section id="cs-contact-490">
+        <div class="cs-container">
+            <!-- Contact Info -->
+            <div class="cs-content">
+                <span class="cs-topper">Contact Us</span>
+                <h2 class="cs-title">Contact Information</h2>
+                <p class="cs-text">
+                    Have questions or ready to get started? Reach out and let's talk about how we can build a website that works for your business. We're always happy to chat.
+                </p>
+            
+                <!--Address-->
+                <span class="cs-header">Address</span>
+                <a href="" class="cs-link">
+                    Based in Charlotte, NC
+                </a>
+                <!--Email-->
+                <span class="cs-header">Email</span>
+                <a href="mailto:mintcitywebdesign@gmail.com" class="cs-link">mintcitywebdesign@gmail.com</a>
+                <!--Phone-->
+                <span class="cs-header">Phone</span>
+                <a href="tel:336-355-1204" class="cs-link">(336) 355-1204</a>
+
+                <!--Social Buttons-->
+                <div class="cs-social">
+                    <a class="cs-social-link" aria-label="visit google profile" href="">
+                        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/linked-in.svg" alt="google" width="11" height="11">
+                    </a>
+                    <a class="cs-social-link" aria-label="visit facebook profile" href="">
+                        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="6" height="11">
+                    </a>
+                    <a class="cs-social-link" aria-label="visit instagram profile" href="">
+                        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram" width="11" height="11">
+                    </a>
+                </div>
+            </div>
+            <!-- Form -->
+            <form id="cs-form-490" name="Contact Form" method="post">
+                <label class="cs-label">
+                    Name*
+                    <input class="cs-input" required type="text" id="name-490" name="name" placeholder="John/Jane Doe">
+                </label>
+                <label class="cs-label">
+                    Email*
+                    <input class="cs-input" required type="text" id="email-490" name="email" placeholder="name@company.com">
+                </label>
+                <label class="cs-label">
+                    Phone*
+                    <input class="cs-input" required type="text" id="phone-490" name="phone" placeholder="+1 (206) 987-6543">
+                </label>
+                <label class="cs-label">
+                    How Did You Find Us
+                    <input class="cs-input" type="text" id="find-490" name="find-us" placeholder="Social Media, Family, Friend...">
+                </label>
+                <label class="cs-label-message">
+                    Message *
+                    <textarea class="cs-input" required name="Message" id="message-490" placeholder="Hello, I'm interested in..."></textarea>
+                </label>
+                <button class="cs-button-solid" type="submit">Send Message Now</button>
+            </form>
         </div>
     </section>
 

@@ -1,12 +1,11 @@
 ---
-title: 'Contact | Code Stitch Web Designs'
-description: 'Meta description for the page'
+title: 'Contact | Mint City Web Design'
+description: 'Contact information'
 preloadImg: '/assets/images/cabinets2.jpg'
 permalink: 'contact/'
 eleventyNavigation:
     key: Contact Us
-    order: 600
-    hideOnDesktop: true
+    order: 400
 ---
 
 {% extends "layouts/base.html" %}
@@ -54,7 +53,7 @@ eleventyNavigation:
                 </label>
                 <label>
                     Phone
-                    <input required type="text" id="phone" name="phone" placeholder="Phone">
+                    <input required type="text" id="phone" name="phone" placeholder="Phone: (123)456-7890">
                 </label>
                 <label>
                     How Did You Find Us
@@ -62,7 +61,7 @@ eleventyNavigation:
                 </label>
                 <label class="cs-label-message">
                     Message
-                    <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
+                    <textarea required name="Message" id="message" placeholder="Write us a message..."></textarea>
                 </label>
                 <button class="cs-button-solid" type="submit">Submit Message</button>
             </form>
@@ -74,16 +73,11 @@ eleventyNavigation:
                 <span class="cs-header">Phone</span>
                 <a class="cs-link" href="tel:{{client.phoneForTel}}">{{client.phoneFormatted}}</a>
                 <!--Address-->
-                <span class="cs-header">Address</span>
+                <span class="cs-header">Location</span>
                 <a class="cs-link" href="{{client.address.mapLink}}">
-                    {{client.address.lineOne}},
-                    <br/>
-                    {{client.address.lineTwo}},
-                    <br/>
                     <span class="cs-block">
                         {{client.address.city}}
                         {{client.address.state}}
-                        {{client.address.zip}}
                     </span>
                 </a>
 
