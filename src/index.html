@@ -476,15 +476,15 @@ eleventyNavigation:
             
                 <!--Address-->
                 <span class="cs-header">Address</span>
-                <a href="" class="cs-link">
-                    Based in Charlotte, NC
+                <a href="{{client.address.mapLink}}" class="cs-link" rel="noopener noreferrer" target="_blank">
+                    Based in {{client.address.city}}, {{client.address.state}}
                 </a>
                 <!--Email-->
                 <span class="cs-header">Email</span>
-                <a href="mailto:mintcitywebdesign@gmail.com" class="cs-link">mintcitywebdesign@gmail.com</a>
+                <a href="mailto:{{client.email}}" class="cs-link">{{client.email}}</a>
                 <!--Phone-->
                 <span class="cs-header">Phone</span>
-                <a href="tel:336-355-1204" class="cs-link">(336) 355-1204</a>
+                <a href="tel:{{client.phoneForTel}}" class="cs-link">{{client.phoneFormatted}}</a>
 
                 <!--Social Buttons-->
                 <div class="cs-social">
@@ -511,14 +511,14 @@ eleventyNavigation:
                 </label>
                 <label class="cs-label">
                     Phone*
-                    <input class="cs-input" required type="text" id="phone-490" name="phone" placeholder="+1 (206) 987-6543">
+                    <input class="cs-input" required type="text" id="phone-490" name="phone" placeholder="+1 (206)987-6543">
                 </label>
                 <label class="cs-label">
                     How Did You Find Us
                     <input class="cs-input" type="text" id="find-490" name="find-us" placeholder="Social Media, Family, Friend...">
                 </label>
                 <label class="cs-label-message">
-                    Message *
+                    Message*
                     <textarea class="cs-input" required name="Message" id="message-490" placeholder="Hello, I'm interested in..."></textarea>
                 </label>
                 <button class="cs-button-solid" type="submit">Send Message Now</button>

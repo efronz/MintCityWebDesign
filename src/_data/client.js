@@ -1,8 +1,8 @@
 module.exports = {
     "name": "Mint City Web Design",
     "email": "mintcitywebdesign@gmail.com",
-    "phoneForTel": "980-266-0729",
-    "phoneFormatted": "(980) 266-0729",
+    "phoneForTel": "336-355-1204",
+    "phoneFormatted": "(336) 355-1204",
     "address": {
         "lineOne": "First Address Line",
         "lineTwo": "Second Address Line",

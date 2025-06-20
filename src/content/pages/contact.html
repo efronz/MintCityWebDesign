@@ -37,33 +37,33 @@ eleventyNavigation:
         <div class="cs-container">
             <form id="cs-form" name="Contact Form" method="post">
                 <div class="cs-content">
-                    <span class="cs-topper">Contact</span>
-                    <h2 class="cs-title">Get in Touch</h2>
+                    <span class="cs-topper">Contact Us</span>
+                    <h2 class="cs-title">Contact Information</h2>
                     <p class="cs-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.
+                        Have questions or ready to get started? Reach out and let's talk about how we can build a website that works for your business. We're always happy to chat.
                     </p>
                 </div>
                 <label>
-                    Name
-                    <input required type="text" id="name" name="name" placeholder="Name">
+                    Name*
+                    <input required type="text" id="name" name="name" placeholder="John/Jane Doe">
                 </label>
                 <label>
-                    Email
-                    <input required type="text" id="email" name="email" placeholder="Email">
+                    Email*
+                    <input required type="text" id="email" name="email" placeholder="name@company.com">
                 </label>
                 <label>
-                    Phone
+                    Phone*
                     <input required type="text" id="phone" name="phone" placeholder="Phone: (123)456-7890">
                 </label>
                 <label>
                     How Did You Find Us
-                    <input type="text" id="find" name="find-us" placeholder="How did you find us?">
+                    <input type="text" id="find" name="find-us" placeholder="Social Media, Family, Friend...">
                 </label>
                 <label class="cs-label-message">
-                    Message
+                    Message*
                     <textarea required name="Message" id="message" placeholder="Write us a message..."></textarea>
                 </label>
-                <button class="cs-button-solid" type="submit">Submit Message</button>
+                <button class="cs-button-solid" type="submit">Send Message Now</button>
             </form>
             <div class="cs-right-section">
                 <!--Email-->
@@ -74,9 +74,9 @@ eleventyNavigation:
                 <a class="cs-link" href="tel:{{client.phoneForTel}}">{{client.phoneFormatted}}</a>
                 <!--Address-->
                 <span class="cs-header">Location</span>
-                <a class="cs-link" href="{{client.address.mapLink}}">
+                <a class="cs-link" href="{{client.address.mapLink}}" rel="noopener noreferrer" target="_blank">
                     <span class="cs-block">
-                        {{client.address.city}}
+                        {{client.address.city}},
                         {{client.address.state}}
                     </span>
                 </a>
