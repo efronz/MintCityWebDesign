@@ -35,7 +35,7 @@ eleventyNavigation:
 
     <section id="cs-contact">
         <div class="cs-container">
-            <form id="cs-form" name="Contact Form" method="post">
+            <form id="cs-form" name="ContactForm-Contact" method="post">
                 <div class="cs-content">
                     <span class="cs-topper">Contact Us</span>
                     <h2 class="cs-title">Contact Information</h2>
@@ -80,13 +80,23 @@ eleventyNavigation:
                         {{client.address.state}}
                     </span>
                 </a>
-
+                <!--Social Buttons-->
+                <div class="cs-social">
+                    <a class="cs-social-link" aria-label="visit linked-in profile" href="">
+                        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/linkedin.png" alt="linked-in" width="11" height="11">
+                    </a>
+                    <a class="cs-social-link" aria-label="visit facebook profile" href="/">
+                        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="6" height="11">
+                    </a>
+                    <a class="cs-social-link" aria-label="visit instagram profile" href="https://www.instagram.com/mintcitywebdesign/" rel="noopener noreferrer" target="_blank">
+                        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram" width="11" height="11">
+                    </a>
+                </div>
                 <!-- Background Image-->
                 <picture class="cs-bg-picture">
                     <source media="(min-width: 601px)" srcset="/assets/images/skyscraper.jpg">
                     <img aria-hidden="true" decoding="async" src="/assets/images/skyscraper.jpg" alt="building" loading="lazy" width="2500" height="1667">
                 </picture>
-
             </div>
         </div>
     </section>
