@@ -55,6 +55,7 @@
     background-color: #f7f3ee;
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
+    border-radius: 0.75rem;
     grid-column: span 12;
     grid-row: span 1;
     display: flex;
@@ -64,21 +65,12 @@
     position: relative;
     z-index: 1;
   }
-  #services-942 .cs-item:hover .cs-h3 {
-    color: var(--bodyTextColorWhite);
-  }
-  #services-942 .cs-item:hover .cs-item-text {
-    color: var(--bodyTextColorWhite);
-    opacity: 0.9;
-  }
-  #services-942 .cs-item:hover .cs-background {
-    opacity: 1;
-  }
   #services-942 .cs-icon-wrapper {
     width: 5.5rem;
     height: 5.5rem;
     margin: -2.75rem 0 2.25rem 0;
     background-color: var(--primary);
+    border-radius: 0.75rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,65 +95,6 @@
     margin: 0 0 2rem 0;
     padding: 0;
     color: var(--bodyTextColor);
-  }
-  #services-942 .cs-link {
-    text-decoration: none;
-    font-size: 0.8rem;
-    line-height: 1.2em;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
-    color: var(--primary);
-    position: relative;
-    transition: color 0.3s;
-  }
-  #services-942 .cs-link:hover {
-    color: #fff;
-  }
-  #services-942 .cs-link:before {
-    /* underline */
-    content: "";
-    width: 100%;
-    height: 1px;
-    background: currentColor;
-    opacity: 1;
-    position: absolute;
-    display: block;
-    bottom: 0rem;
-    left: 0;
-  }
-  #services-942 .cs-background {
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: opacity 0.3s;
-  }
-  #services-942 .cs-background:before {
-    /* background color overlay */
-    content: "";
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 100%;
-    background: #1a1a1a;
-    opacity: 0.84;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
-  #services-942 .cs-background img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    /* Makes img tag act as a background image */
-    object-fit: cover;
   }
   #services-942 .cs-waves {
     width: 100%;
