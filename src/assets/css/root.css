@@ -112,6 +112,9 @@
     font-size: 100%;
     color: var(--bodyTextColor);
   }
+  html {
+    scroll-behavior: smooth;
+  }
   *,
   *:before,
   *:after {

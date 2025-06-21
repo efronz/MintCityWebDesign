@@ -8,6 +8,7 @@
     padding: var(--sectionPadding);
     position: relative;
     z-index: 1;
+    scroll-padding-top: 4rem;
   }
   #services-942 .cs-container {
     width: 100%;
@@ -294,8 +295,8 @@
   }
   #pricing-357 .cs-popular:before {
     /* Most Popular Tag */
-    content: "Popular";
-    font-size: 0.875rem;
+    content: "Full Package";
+    font-size: 0.625rem;
     text-align: center;
     line-height: 1.75rem;
     font-weight: 700;
